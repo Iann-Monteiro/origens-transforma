@@ -31,7 +31,7 @@ const Inscricao = () => {
             onClick={() => navigate("/")}
             size="lg"
             variant="outline"
-            className="font-semibold"
+            className="font-semibold whitespace-normal md:whitespace-nowrap text-center leading-tight px-6 py-7"
           >
             Voltar para página inicial
           </Button>

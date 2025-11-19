@@ -81,7 +81,7 @@ export const PillarsSection = ({ onOpenModal }: PillarsSectionProps) => {
           <Button
             onClick={() => onOpenModal("Pilares")}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 whitespace-normal md:whitespace-nowrap text-center leading-tight"
           >
             Preciso viver isso
           </Button>
