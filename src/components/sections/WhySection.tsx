@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { AlertTriangle } from "lucide-react";
+
 interface WhySectionProps {
   onOpenModal: (section: string) => void;
 }
@@ -22,9 +24,7 @@ export const WhySection = ({
           <div className="grid sm:grid-cols-2 gap-4 py-8">
             {challenges.map((challenge, index) => <div key={index} className="flex items-start gap-3 p-4 bg-bg-light rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
-                    <div className="w-3 h-3 rounded-full bg-primary" />
-                  </div>
+                  <AlertTriangle className="w-6 h-6 text-primary" strokeWidth={2} />
                 </div>
                 <p className="text-base md:text-lg text-foreground font-medium text-left">
                   {challenge}
