@@ -25,7 +25,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
               20 dias que transformam seus próximos 20 anos
             </h1>
             <p className="text-xl md:text-2xl font-medium">
-              <span className="bg-[#007AFF] text-white rounded px-1 py-0.5 box-decoration-clone leading-relaxed">
+              <span className="bg-primary text-white rounded px-1 py-[2px] box-decoration-clone leading-relaxed">
                 Imersão para jovens cristãos que buscam propósito e direção
               </span>
             </p>
