@@ -36,7 +36,7 @@ export const WhySection = ({
           </p>
           
           <div className="flex justify-center pt-6">
-            <Button onClick={() => onOpenModal("Por que o Origens existe")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 whitespace-normal md:whitespace-nowrap">
+            <Button onClick={() => onOpenModal("Por que o Origens existe")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-10whitespace-normal md:whitespace-nowrap">
               Quero aproveitar essa oportunidade
             </Button>
           </div>
