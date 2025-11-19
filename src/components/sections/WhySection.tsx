@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { AlertTriangle } from "lucide-react";
-
 interface WhySectionProps {
   onOpenModal: (section: string) => void;
 }
@@ -33,7 +32,7 @@ export const WhySection = ({
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground text-center">
-            O Origens nasce como uma oportunidade de parar por 20 dias e se preparar, ganhar força, conhecimento e maturidade para voltar mais forte e confiante do que nunca.                                                                                          
+            O Origens nasce como uma oportunidade de parar por 20 dias e se preparar, ganhar força, conhecimento e maturidade para voltar mais forte e confiante do que nunca.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
           </p>
           
           <div className="flex justify-center pt-6">
