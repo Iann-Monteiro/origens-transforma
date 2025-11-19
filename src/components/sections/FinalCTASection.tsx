@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 interface FinalCTASectionProps {
   onOpenModal: (section: string) => void;
 }
 
 export const FinalCTASection = ({ onOpenModal }: FinalCTASectionProps) => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
-    <section className="py-20 px-4 md:px-8 bg-gradient-to-b from-bg-light to-background">
+    <section ref={ref} className={`py-20 px-4 md:px-8 bg-gradient-to-b from-bg-light to-background transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container max-w-4xl mx-auto text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-bold text-foreground">
           Mais de 100 jovens já passaram pelo Origens

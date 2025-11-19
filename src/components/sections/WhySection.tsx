@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { AlertTriangle } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 interface WhySectionProps {
   onOpenModal: (section: string) => void;
 }
 export const WhySection = ({
   onOpenModal
 }: WhySectionProps) => {
+  const { ref, isVisible } = useScrollAnimation();
   const challenges = ["Ansiedade, dependência, vícios", "Pressão social e emocional", "Falta de direção profissional", "Fé rasa e inconstante"];
-  return <section className="py-20 px-4 md:px-8 bg-background">
+  return <section ref={ref} className={`py-20 px-4 md:px-8 bg-background transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground">
           Por que o Origens existe?        
