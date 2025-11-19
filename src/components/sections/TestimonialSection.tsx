@@ -33,7 +33,7 @@ export const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-bg-light">
+    <section className="py-12 md:py-20 px-4 md:px-8 bg-bg-light">
       <div className="container max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-foreground">
           Quem viveu, não voltou igual
