@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const testimonials = [
   {
@@ -23,6 +24,7 @@ const testimonials = [
 
 export const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { ref, isVisible } = useScrollAnimation();
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
@@ -33,7 +35,7 @@ export const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-8 md:py-16 px-4 md:px-8 bg-bg-light">
+    <section ref={ref} className={`py-8 md:py-16 px-4 md:px-8 bg-bg-light transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-foreground">
           Quem viveu, não voltou igual
