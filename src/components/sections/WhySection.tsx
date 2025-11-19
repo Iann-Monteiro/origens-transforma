@@ -11,12 +11,12 @@ export const WhySection = ({
   return <section className="py-20 px-4 md:px-8 bg-background">
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 text-foreground">
-          Por que o Origens existe?        
+          Por que o Origens existe?        
         </h2>
         
         <div className="space-y-6">
           <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
-            Vimos uma geração crescendo sem preparo, e isso tem consequências graves:               
+            Vimos uma geração crescendo sem preparo, e isso tem consequências graves:               
           </p>
           
           
