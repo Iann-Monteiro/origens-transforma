@@ -19,12 +19,12 @@ export const WhySection = ({ onOpenModal }: WhySectionProps) => {
           Por que o Origens existe
         </h2>
         
-        <div className="space-y-6 text-center md:text-left">
-          <p className="text-xl md:text-2xl font-semibold text-foreground">
+        <div className="space-y-6">
+          <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
             Existe uma geração crescendo sem preparo
           </p>
           
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-muted-foreground text-center">
             O Origens nasceu como resposta pra quem sente que não dá mais pra empurrar com a barriga.
           </p>
           
@@ -46,7 +46,7 @@ export const WhySection = ({ onOpenModal }: WhySectionProps) => {
             ))}
           </div>
           
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-muted-foreground text-center">
             Uma oportunidade de parar, ganhar força, conhecimento e maturidade para voltar mais preparado do que nunca.
           </p>
           
