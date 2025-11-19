@@ -1,12 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { LeadCaptureModal } from "@/components/LeadCaptureModal";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { TestimonialSection } from "@/components/sections/TestimonialSection";
+import { WhySection } from "@/components/sections/WhySection";
+import { PillarsSection } from "@/components/sections/PillarsSection";
+import { IncludedSection } from "@/components/sections/IncludedSection";
+import { InvestmentSection } from "@/components/sections/InvestmentSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalSource, setModalSource] = useState("");
+
+  const handleOpenModal = (section: string) => {
+    setModalSource(section);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection onOpenModal={handleOpenModal} />
+      <TestimonialSection />
+      <WhySection onOpenModal={handleOpenModal} />
+      <PillarsSection onOpenModal={handleOpenModal} />
+      <IncludedSection onOpenModal={handleOpenModal} />
+      <InvestmentSection onOpenModal={handleOpenModal} />
+      <FAQSection />
+      <FinalCTASection onOpenModal={handleOpenModal} />
+      
+      <LeadCaptureModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        sourceSection={modalSource}
+      />
     </div>
   );
 };
