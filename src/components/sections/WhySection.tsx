@@ -32,11 +32,11 @@ export const WhySection = ({
           </div>
           
           <p className="text-lg md:text-xl text-muted-foreground text-center">
-            O Origens nasce como uma oportunidade de parar por 20 dias e se preparar, ganhar força, conhecimento e maturidade para voltar mais forte e confiante do que nunca.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            O Origens nasce como uma oportunidade de parar por 20 dias e se preparar, ganhar força, conhecimento e maturidade para voltar mais forte e confiante do que&nbsp;nunca.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
           </p>
           
           <div className="flex justify-center pt-6">
-            <Button onClick={() => onOpenModal("Por que o Origens existe")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <Button onClick={() => onOpenModal("Por que o Origens existe")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105 whitespace-normal md:whitespace-nowrap">
               Quero aproveitar essa oportunidade
             </Button>
           </div>
