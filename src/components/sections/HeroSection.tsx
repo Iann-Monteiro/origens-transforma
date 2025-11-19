@@ -18,9 +18,11 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground">
               20 dias que transformam seus próximos 20 anos
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Imersão para jovens cristãos que buscam propósito e direção
-            </p>
+            <div className="bg-brand-blue px-4 py-2 rounded-lg">
+              <p className="text-xl md:text-2xl text-white font-medium">
+                
+              </p>
+            </div>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               <div className="px-4 py-2 bg-bg-light rounded-full border border-border">
                 <span className="text-sm font-semibold text-foreground">11 a 31 de janeiro de 2026</span>
