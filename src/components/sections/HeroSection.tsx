@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { motion } from "framer-motion";
 
 interface HeroSectionProps {
   onOpenModal: (section: string) => void;
@@ -6,13 +8,17 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-background py-12 px-4 md:px-8 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-10 w-32 h-32 rounded-full border-8 border-primary opacity-20" />
-        <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full border-6 border-brand-green opacity-15" />
-      </div>
-      
-      <div className="container max-w-6xl mx-auto relative z-10">
+    <AuroraBackground className="min-h-[90vh]">
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="container max-w-6xl mx-auto relative z-10 px-4 md:px-8"
+      >
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground">
@@ -58,7 +64,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </AuroraBackground>
   );
 };
