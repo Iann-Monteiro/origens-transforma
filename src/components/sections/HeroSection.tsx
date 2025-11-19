@@ -18,7 +18,7 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground">
               20 dias que transformam seus próximos 20 anos
             </h1>
-            <p className="text-xl md:text-2xl text-white font-medium bg-[#007AFF] rounded-lg px-4 py-3 inline-block">
+            <p className="text-xl md:text-2xl text-white font-medium bg-[#007AFF] rounded-lg px-3 py-1.5 inline-block">
               Imersão para jovens cristãos que buscam propósito e direção
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
