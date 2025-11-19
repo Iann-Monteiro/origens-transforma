@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
   return (
-    <AuroraBackground className="min-h-[85vh] md:min-h-[90vh]">
+    <AuroraBackground className="min-h-[75vh] md:min-h-[85vh]">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
