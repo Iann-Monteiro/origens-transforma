@@ -14,14 +14,13 @@ export const AuroraBackground = ({
   ...props
 }: AuroraBackgroundProps) => {
   return (
-    <main>
-      <div
-        className={cn(
-          "relative flex flex-col h-[100vh] items-center justify-center bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg",
-          className
-        )}
-        {...props}
-      >
+    <div
+      className={cn(
+        "relative flex flex-col h-[100vh] items-center justify-center bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg",
+        className
+      )}
+      {...props}
+    >
         <div className="absolute inset-0 overflow-hidden">
           <div
             className={cn(
@@ -47,6 +46,5 @@ export const AuroraBackground = ({
         </div>
         {children}
       </div>
-    </main>
   );
 };
