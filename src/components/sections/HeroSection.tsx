@@ -18,8 +18,10 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground">
               20 dias que transformam seus próximos 20 anos
             </h1>
-            <p className="text-xl md:text-2xl text-white font-medium bg-[#007AFF] rounded-md px-2 py-0.5 inline-block">
-              Imersão para jovens cristãos que buscam propósito e direção
+            <p className="text-xl md:text-2xl font-medium">
+              <span className="bg-[#007AFF] text-white rounded px-1 py-0.5 box-decoration-clone leading-relaxed">
+                Imersão para jovens cristãos que buscam propósito e direção
+              </span>
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               <div className="px-4 py-2 bg-bg-light rounded-full border border-border">
