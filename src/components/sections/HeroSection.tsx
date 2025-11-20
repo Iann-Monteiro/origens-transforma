@@ -55,10 +55,13 @@ export const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
             <div className="relative">
               <div className="w-full h-[500px] bg-gradient-to-br from-bg-light to-muted rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
                 <div className="text-center space-y-4 p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full border-8 border-primary" />
-                  </div>
-                  <p className="text-muted-foreground italic">Placeholder para imagem de jovens em movimento</p>
+                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/1.svg"
+                      alt="Jovens em movimento"
+                      className="w-24 h-24 rounded-full object-cover"
+                    />
+                </div>
                 </div>
               </div>
             </div>
