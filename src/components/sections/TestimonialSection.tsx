@@ -7,18 +7,22 @@ const testimonials = [
   {
     quote: "Minha vida está dividida entre antes e depois do Origens.\n\nTive uma evolução muito grande e amadureci muito através da imersão.\n\nMinhas decisões e meu caminho também ficaram mais claros.",
     author: "Jefete, 19 anos",
+    image: "/jefete.jpg",
   },
   {
     quote: "Criei raízes no Senhor e adquiri ferramentas que moldaram minha conduta de vida.\n\nFui impulsionado profissional e ministerialmente, e hoje exerço cargos de liderança.\n\nFoi no Origens que conheci minha noiva.",
     author: "Rodrigo, 19 anos",
+        image: "/digas.jpg",
   },
   {
     quote: "Foi um tempo de amadurecimento, onde aprendi a me conhecer em Deus e enxergar a vida com mais propósito.\n\nCaminho com mais firmeza, fé e clareza sobre quem sou e pra onde quero ir.",
     author: "Maria Fernanda, 20 anos",
+    image: "/maria.jpg",
   },
   {
     quote: "Foi um divisor de águas na minha vida.\n\nViajo mais de 1.000 km só para participar, porque vale cada segundo.\n\nTodos deveriam viver essa experiência e enxergar o mundo de uma nova forma.",
     author: "Enzo, 16 anos",
+    image: "/naosei.jpg",
   },
 ];
 
@@ -54,8 +58,13 @@ export const TestimonialSection = () => {
                 >
                   <div className="bg-card rounded-2xl p-8 md:p-12 shadow-lg border border-border max-w-3xl mx-auto">
                     <div className="flex flex-col items-center text-center space-y-6">
-                      <div className="w-24 h-24 rounded-full bg-muted border-4 border-primary flex items-center justify-center">
-                        <span className="text-sm text-muted-foreground">Foto</span>
+                      <div className="w-24 h-24 rounded-full bg-muted border-4 border-primary flex items-center justify-center overflow-hidden">
+                        <img
+                          src={testimonial.image}
+                          alt={`Foto de ${testimonial.author}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       </div>
                       <blockquote className="text-lg md:text-xl text-foreground leading-relaxed whitespace-pre-line">
                         "{testimonial.quote}"
