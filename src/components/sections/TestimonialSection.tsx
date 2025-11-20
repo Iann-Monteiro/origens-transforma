@@ -58,21 +58,20 @@ export const TestimonialSection = () => {
                 >
                   <div className="bg-card rounded-2xl p-8 md:p-12 shadow-lg border border-border max-w-3xl mx-auto">
                     <div className="flex flex-col items-center text-center space-y-6">
-                      <div className="w-24 h-24 rounded-full bg-muted border-4 border-primary flex items-center justify-center overflow-hidden">
-                        <img
-                          src={testimonial.image}
-                          alt={`Foto de ${testimonial.author}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      </div>
-                      <blockquote className="text-lg md:text-xl text-foreground leading-relaxed whitespace-pre-line">
-                        "{testimonial.quote}"
-                      </blockquote>
-                      <cite className="text-base md:text-lg font-semibold text-primary not-italic">
-                        — {testimonial.author}
-                      </cite>
-                    </div>
+  <div className="w-24 h-24 rounded-full bg-muted border-4 border-primary flex items-center justify-center overflow-hidden">
+    <img
+      src={testimonial.image}
+      alt={`Foto de ${testimonial.author}`}
+      className="w-full h-full object-cover"
+    />
+  </div>
+  <blockquote className="text-lg md:text-xl text-foreground leading-relaxed whitespace-pre-line">
+    "{testimonial.quote}"
+  </blockquote>
+  <cite className="text-base md:text-lg font-semibold text-primary not-italic">
+    — {testimonial.author}
+  </cite>
+</div>
                   </div>
                 </div>
               ))}
