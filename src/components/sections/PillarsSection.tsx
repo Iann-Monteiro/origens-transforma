@@ -8,35 +8,35 @@ interface PillarsSectionProps {
 
 const pillars = [
   {
-    icon: Heart,
+    image: "/9.svg",
     title: "Espiritual",
     description: "Fortalecer a fé e quebrar os ciclos de queda e inconstância",
     colorClass: "text-primary",
     bgColorClass: "bg-primary/10",
   },
   {
-    icon: Brain,
+    image: "/10.svg",
     title: "Emocional",
     description: "Autoconhecimento, autoestima e maturidade emocional",
     colorClass: "text-brand-blue",
     bgColorClass: "bg-brand-blue/10",
   },
   {
-    icon: Home,
+    image: "/8.svg",
     title: "Vida Prática",
     description: "Organização, rotina doméstica e vida independente",
     colorClass: "text-brand-green",
     bgColorClass: "bg-brand-green/10",
   },
   {
-    icon: Briefcase,
+    image: "/6.svg",
     title: "Empreendedorismo",
     description: "Vida profissional e como empreender do jeito certo",
     colorClass: "text-brand-magenta",
     bgColorClass: "bg-brand-magenta/10",
   },
   {
-    icon: Users,
+    image: "/7.svg",
     title: "Relacionamentos",
     description: "Amizades, namoro e preparação para o casamento cristão",
     colorClass: "text-brand-red",
@@ -65,9 +65,9 @@ export const PillarsSection = ({ onOpenModal }: PillarsSectionProps) => {
                 className="bg-card rounded-2xl p-6 shadow-md border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className={`w-16 h-16 rounded-full ${pillar.bgColorClass} flex items-center justify-center mb-4`}>
-                  <Icon className={`w-8 h-8 ${pillar.colorClass}`} strokeWidth={2} />
-                </div>
+                <div className={`w-16 h-16 rounded-full ${pillar.bgColorClass} flex items-center justify-center mb-4 overflow-hidden`}>
+  <img src={pillar.image} alt={pillar.title} className="w-8 h-8" />
+</div>
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   {pillar.title}
                 </h3>
