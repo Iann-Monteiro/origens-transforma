@@ -65,9 +65,11 @@ export const PillarsSection = ({ onOpenModal }: PillarsSectionProps) => {
                 className="bg-card rounded-2xl p-6 shadow-md border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className={`w-16 h-16 rounded-full ${pillar.bgColorClass} flex items-center justify-center mb-4 overflow-hidden`}>
-  <img src={pillar.image} alt={pillar.title} className="w-8 h-8" />
-</div>
+                <img
+      src={pillar.image}
+      alt={pillar.title}
+      className="w-16 h-16 mb-4"
+    />
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   {pillar.title}
                 </h3>
