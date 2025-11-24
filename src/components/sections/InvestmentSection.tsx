@@ -14,10 +14,14 @@ export const InvestmentSection = ({
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-3 text-foreground">
           Investimento
+
+
+
+
+
+
         </h2>
-        <p className="text-lg md:text-xl text-center text-muted-foreground mb-8">
-          Tudo incluso: alimentação, hospedagem, conteúdo e acompanhamento completo            
-        </p>
+        
         
         <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-primary/20 max-w-2xl mx-auto">
           <div className="text-center space-y-6">
