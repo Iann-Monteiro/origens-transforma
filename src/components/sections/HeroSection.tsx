@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { motion } from "framer-motion";
+import heroGroup from "@/assets/hero-group.jpg";
 interface HeroSectionProps {
   onOpenModal: (section: string) => void;
 }
@@ -49,12 +50,8 @@ export const HeroSection = ({
           
           <div className="hidden md:block">
             <div className="relative">
-              <div className="w-full h-[500px] bg-gradient-to-br from-bg-light to-muted rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
-                <div className="text-center space-y-4 p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
-                    <img src="/1.svg" alt="Jovens em movimento" className="w-24 h-24 rounded-full object-cover" />
-                </div>
-                </div>
+              <div className="w-full h-[500px] rounded-3xl shadow-2xl overflow-hidden">
+                <img src={heroGroup} alt="Grupo de jovens da imersão Origens" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
