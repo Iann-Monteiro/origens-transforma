@@ -23,14 +23,14 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:contato@origens.com" className="hover:text-primary transition-colors">
-                  contato@origens.com
+                <a href="mailto:midiaccvpp@gmail.com" className="hover:text-primary transition-colors">
+                  midiaccvpp@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <a href="tel:+5546999999999" className="hover:text-primary transition-colors">
-                  (46) 99999-9999
+                <a href="tel:+5546991283559" className="hover:text-primary transition-colors">
+                  (46) 99128-3559
                 </a>
               </div>
             </div>
@@ -41,7 +41,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold">Redes Sociais</h4>
             <div className="flex gap-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/origens.vida/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110"
