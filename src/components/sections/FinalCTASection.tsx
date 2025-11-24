@@ -34,7 +34,7 @@ export const FinalCTASection = ({
             <span className="text-base font-semibold text-foreground">Recanto Vida</span>
           </div>
           <div className="px-6 py-3 bg-primary/10 rounded-full border-2 border-primary shadow-md">
-            <span className="text-base font-bold text-primary">Vagas estão acabando                    </span>
+            <span className="text-base font-bold text-primary">Vagas estão acabando</span>
           </div>
         </div>
         
