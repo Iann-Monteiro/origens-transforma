@@ -25,7 +25,7 @@ export const WhySection = ({
           <div className="grid sm:grid-cols-2 gap-4 py-8">
             {challenges.map((challenge, index) => <div key={index} className="flex items-start gap-3 p-4 bg-bg-light rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <div className="flex-shrink-0 mt-1">
-                  <AlertTriangle className="w-6 h-6 text-brand-green" strokeWidth={2} />
+                  <AlertTriangle className="w-6 h-6" strokeWidth={2} style={{ color: '#FF0000' }} />
                 </div>
                 <p className="text-base md:text-lg text-foreground font-medium text-left">
                   {challenge}
