@@ -58,18 +58,17 @@ export const PillarsSection = ({ onOpenModal }: PillarsSectionProps) => {
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {pillars.map((pillar, index) => {
-            const Icon = pillar.icon;
             return (
               <div
                 key={index}
-                className="bg-card rounded-2xl p-6 shadow-md border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in"
+                className="bg-card rounded-2xl p-6 shadow-md border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fade-in flex flex-col items-center text-center"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <img
-      src={pillar.image}
-      alt={pillar.title}
-      className="w-16 h-16 mb-4"
-    />
+                  src={pillar.image}
+                  alt={pillar.title}
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   {pillar.title}
                 </h3>
