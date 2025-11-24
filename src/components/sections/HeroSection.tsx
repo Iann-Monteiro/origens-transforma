@@ -38,7 +38,7 @@ export const HeroSection = ({
                 <span className="text-sm font-semibold text-foreground">Pato Branco</span>
               </div>
               <div className="px-4 py-2 bg-primary/10 rounded-full border border-primary">
-                <span className="text-sm font-semibold text-primary">    19 vagas disponíveis                         </span>
+                <span className="text-sm font-semibold text-primary">                19 vagas disponíveis                         </span>
               </div>
             </div>
             <div className="pt-4">
