@@ -1,14 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-
 interface InvestmentSectionProps {
   onOpenModal: (section: string) => void;
 }
-
-export const InvestmentSection = ({ onOpenModal }: InvestmentSectionProps) => {
-  const { ref, isVisible } = useScrollAnimation();
-  return (
-    <section ref={ref} className={`py-20 px-4 md:px-8 bg-bg-light transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+export const InvestmentSection = ({
+  onOpenModal
+}: InvestmentSectionProps) => {
+  const {
+    ref,
+    isVisible
+  } = useScrollAnimation();
+  return <section ref={ref} className={`py-20 px-4 md:px-8 bg-bg-light transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-3 text-foreground">
           Investimento
@@ -34,7 +36,7 @@ export const InvestmentSection = ({ onOpenModal }: InvestmentSectionProps) => {
             
             <div className="py-4">
               <div className="inline-block px-6 py-3 bg-destructive/10 rounded-full border-2 border-destructive/30">
-                <span className="text-base font-bold text-destructive">Apenas 55 vagas disponíveis</span>
+                <span className="text-base font-bold text-destructive">Apenas 19 vagas disponíveis</span>
               </div>
             </div>
             
@@ -43,17 +45,12 @@ export const InvestmentSection = ({ onOpenModal }: InvestmentSectionProps) => {
             </p>
             
             <div className="pt-4">
-              <Button
-                onClick={() => onOpenModal("Investimento")}
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full sm:w-auto whitespace-normal md:whitespace-nowrap text-center leading-tight"
-              >
+              <Button onClick={() => onOpenModal("Investimento")} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full sm:w-auto whitespace-normal md:whitespace-nowrap text-center leading-tight">
                 Quero garantir minha vaga
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
