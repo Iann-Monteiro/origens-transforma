@@ -36,11 +36,11 @@ export const FinalCTASection = ({ onOpenModal }: FinalCTASectionProps) => {
           </div>
         </div>
         
-        <div className="pt-4">
+        <div className="pt-4 flex justify-center">
           <Button
             onClick={() => onOpenModal("CTA final")}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-6 py-7 rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-110 whitespace-normal md:whitespace-nowrap text-center leading-tight flex items-center justify-center"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-6 py-7 rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-110 whitespace-normal md:whitespace-nowrap text-center leading-tight"
           >
             Inscreva-se agora
           </Button>
