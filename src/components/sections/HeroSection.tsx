@@ -50,9 +50,7 @@ export const HeroSection = ({
           
           <div className="hidden md:block">
             <div className="relative">
-              <div className="w-full h-[500px] rounded-3xl shadow-2xl overflow-hidden">
-                <img src={heroGroup} alt="Grupo de jovens da imersão Origens" className="w-full h-full object-cover" />
-              </div>
+              <img src={heroGroup} alt="Grupo de jovens da imersão Origens" className="w-full rounded-3xl shadow-2xl" />
             </div>
           </div>
         </div>
