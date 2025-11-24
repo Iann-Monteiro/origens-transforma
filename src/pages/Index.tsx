@@ -8,6 +8,7 @@ import { IncludedSection } from "@/components/sections/IncludedSection";
 import { InvestmentSection } from "@/components/sections/InvestmentSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { Footer } from "@/components/sections/Footer";
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,6 +33,7 @@ const Index = () => {
       <InvestmentSection onOpenModal={handleOpenModal} />
       <FAQSection />
       <FinalCTASection onOpenModal={handleOpenModal} />
+      <Footer />
       
       <LeadCaptureModal
         isOpen={isModalOpen}
