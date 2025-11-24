@@ -43,7 +43,7 @@ export const InvestmentSection = ({ onOpenModal }: InvestmentSectionProps) => {
               <Button
                 onClick={() => onOpenModal("Investimento")}
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl px-6 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full sm:w-auto whitespace-normal md:whitespace-nowrap text-center leading-tight"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-6 py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-105 w-full sm:w-auto whitespace-normal md:whitespace-nowrap text-center leading-tight"
               >
                 Quero garantir minha vaga
               </Button>
