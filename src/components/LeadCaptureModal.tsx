@@ -50,9 +50,9 @@ export const LeadCaptureModal = ({ isOpen, onClose, sourceSection }: LeadCapture
       setEmail("");
       setWhatsapp("");
       
-      // Navigate to confirmation page
+      // Redirect to external registration page
       setTimeout(() => {
-        navigate("/inscricao");
+        window.location.href = "https://vidaparaospovos.com.br/eventos/1037977/origens-26-imersao-de-janeiro";
       }, 500);
     } catch (error) {
       console.error("Error submitting lead:", error);
