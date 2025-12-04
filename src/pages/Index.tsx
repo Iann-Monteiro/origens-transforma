@@ -6,6 +6,7 @@ import { WhySection } from "@/components/sections/WhySection";
 import { PillarsSection } from "@/components/sections/PillarsSection";
 import { IncludedSection } from "@/components/sections/IncludedSection";
 import { InvestmentSection } from "@/components/sections/InvestmentSection";
+import { HistorySection } from "@/components/sections/HistorySection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import { Footer } from "@/components/sections/Footer";
@@ -31,6 +32,7 @@ const Index = () => {
       <PillarsSection onOpenModal={handleOpenModal} />
       <IncludedSection onOpenModal={handleOpenModal} />
       <InvestmentSection onOpenModal={handleOpenModal} />
+      <HistorySection onOpenModal={handleOpenModal} />
       <FAQSection />
       <FinalCTASection onOpenModal={handleOpenModal} />
       <Footer />
